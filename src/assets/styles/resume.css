@@ -1,0 +1,100 @@
+.resume-left,
+.resume-right {
+  width: 50%;
+}
+
+.circle {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #18d26e;
+}
+
+.v-line {
+  height: calc(100% - 20px);
+  width: 2px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.box .right-box-1 {
+  padding: 0px 20px 30px 20px;
+}
+
+.title-green {
+  color: #18d26e;
+}
+
+.study-place {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.list-item-1 {
+  padding-left: 18px;
+}
+
+.list-item-1 li {
+  list-style: disc;
+}
+
+.certificate-link {
+  text-decoration: none;
+  color: #18d26e;
+  transition: all .25s ease-in-out;
+}
+
+.certificate-link:hover {
+  color: darkgoldenrod;
+}
+
+.resume {
+  width: fit-content;
+}
+
+.resume-link {
+  display: inline-block;
+  background: linear-gradient(45deg, #343d68, #343d68be, #343d687c);
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #18d26e;
+  transition: transform 0.3s ease;
+}
+
+.resume:hover {
+  transform: scale(1.05);
+}
+
+.section-title {
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .section-body {
+    flex-direction: column;
+  }
+
+  .resume-left,
+  .resume-right {
+    width: 100%;
+  }
+
+  .resume-right {
+    margin-top: 40px;
+  }
+
+  .section-title {
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  .title-content {
+    margin-bottom: 18px;
+  }
+}

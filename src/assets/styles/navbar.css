@@ -1,0 +1,27 @@
+.my-nav {
+  background-color: #040404;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.loading {
+  width: 0%;
+  height: 2px;
+  background-color: #18d26e;
+  transition: width 0.25s ease-in;
+}
+
+.nav-link-text {
+  width: fit-content;
+}
+
+.nav-link:hover .loading, .nav-link.link-active .loading {
+  width: 60%; 
+}
+
+@media (max-width: 1250px) {
+  .my-nav {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

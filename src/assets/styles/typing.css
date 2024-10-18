@@ -1,0 +1,23 @@
+.text {
+  font-size: 28px;
+  color: #18d26e;
+}
+
+.cursor {
+  animation: blink 0.7s steps(1) infinite;
+  position: relative;
+  top: -2.5px;
+  color: white;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 1024) {
+  .text {
+    font-size: 24px;
+  }
+}
