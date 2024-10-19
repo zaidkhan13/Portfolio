@@ -1,7 +1,7 @@
 import React from "react";
 import "../assets/styles/home.css";
 import TypingEffect from "./Typing";
-import image3 from "../assets/images/image-3.jpg";
+import image3 from "../assets/images/image-5.avif";
 
 const Home = () => {
   const words = [

@@ -49,7 +49,7 @@ const Projects = () => {
                       rel="noreferrer"
                       href="https://github.com/SaikumarBlaze/SkyWrite"
                     >
-                      <div className="github icon me-2">
+                      <div className="github social-icon me-2">
                         <i className="fa-brands fa-github"></i>
                       </div>
                     </a>
@@ -88,7 +88,7 @@ const Projects = () => {
                       rel="noreferrer"
                       href="https://www.github.com/SaikumarBlaze"
                     >
-                      <div className="github icon me-2">
+                      <div className="github social-icon me-2">
                         <i className="fa-brands fa-github"></i>
                       </div>
                     </a>
@@ -127,7 +127,7 @@ const Projects = () => {
                       rel="noreferrer"
                       href="https://www.github.com/SaikumarBlaze"
                     >
-                      <div className="github icon me-2">
+                      <div className="github social-icon me-2">
                         <i className="fa-brands fa-github"></i>
                       </div>
                     </a>

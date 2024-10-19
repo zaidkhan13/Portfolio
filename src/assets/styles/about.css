@@ -31,6 +31,10 @@
   font-weight: bold;
 }
 
+.social-link {
+  transition: all 0.25s ease;
+}
+
 .social-link:hover {
   color: darkgoldenrod;
 }
