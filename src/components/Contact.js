@@ -20,23 +20,23 @@ const Contact = () => {
         link: false,
         icon: "fa-solid fa-envelope",
         title: "Email Me",
-        value: "halbarsaikumar452@gmail.com",
+        value: "zaidalikhan012@gmail.com",
       },
       {
         link: false,
         icon: "fa-solid fa-phone",
         title: "Call Me",
-        value: "+91 9182086206",
+        value: "+91 7330967653",
       },
     ],
     socialProfiles: [
       {
         icon: "fa-brands fa-instagram",
-        url: "https://www.instagram.com/saikumar8742/",
+        url: "https://www.instagram.com/zaid_khan_991/",
       },
       {
         icon: "fa-brands fa-linkedin",
-        url: "https://www.linkedin.com/in/saikumar452/",
+        url: "https://www.linkedin.com/in/zaidalikhan31/",
       },
     ],
   };

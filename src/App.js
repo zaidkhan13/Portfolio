@@ -10,9 +10,9 @@ import "./App.css";
 function App() {
   return (
     <Router>
-      <Navbar title="Sai Kumar" />
+      <Navbar title="Zaid Ali Khan" />
       <Routes>
-        <Route exact path="/" element={<Home title={"Halbar Sai Kumar"} />} />
+        <Route exact path="/" element={<Home title={"Zaid Ali Khan"} />} />
         <Route exact path="/about" element={<About />} />
         <Route exact path="/resume" element={<Resume />} />
         <Route exact path="/projects" element={<Projects />} />

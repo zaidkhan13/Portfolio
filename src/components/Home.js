@@ -1,7 +1,7 @@
 import React from "react";
 import "../assets/styles/home.css";
 import TypingEffect from "./Typing";
-import image3 from "../assets/images/image-5.avif";
+import image3 from "../assets/images/image-2.avif";
 
 const Home = (props) => {
   const words = [
@@ -17,19 +17,15 @@ const Home = (props) => {
   const socialIcons = [
     {
       icon: "fa-brands fa-github",
-      link: "https://www.github.com/SaikumarBlaze",
+      link: "https://www.github.com/zaidkhan13/",
     },
     {
       icon: "fa-brands fa-linkedin",
-      link: "https://www.linkedin.com/in/saikumar452/",
-    },
-    {
-      icon: "fa-solid fa-code",
-      link: "https://leetcode.com/u/halbarsaikumar452/",
+      link: "https://www.linkedin.com/in/zaidalikhan31/",
     },
     {
       icon: "fa-solid fa-envelope",
-      link: "mailto:halbarsaikumar452@gmail.com",
+      link: "mailto:zaidalikhan012@gmail.com",
     },
   ];
 

@@ -4,35 +4,33 @@ import "../assets/styles/about.css";
 const about = () => {
   const personalDetails = {
     summary:
-      "I am a Computer Science graduate from IIITDM Jabalpur with a focus on Full Stack Development. I have experience in building web applications, working with cloud infrastructures, and optimizing development processes using CI/CD pipelines. I’m skilled at solving complex problems and delivering reliable solutions. I am actively seeking opportunities in web development where I can apply my skills and continue learning.",
+      "I am a Information Technology Graduate from Deccan College of Engineering and Technology with a focus on Full Stack Development. I have experience in building web applications, working with cloud infrastructures, and optimizing development processes using CI/CD pipelines. I’m skilled at solving complex problems and delivering reliable solutions. I am actively seeking opportunities in web development where I can apply my skills and continue learning.",
     detailsList: [
-      { link: false, key: "Birthday", value: "28 August 2002" },
-      { link: false, key: "Age", value: "22" },
-      { link: false, key: "Degree", value: "B.Tech CSE" },
+      { link: false, key: "Birthday", value: "31 May 2003" },
+      { link: false, key: "Age", value: "21" },
+      { link: false, key: "Degree", value: "B.E IT" },
       { link: false, key: "City", value: "Hyderabad, India" },
       {
         link: true,
         key: "Linkedin",
-        value: "saikumar452",
-        url: "https://www.linkedin.com/in/saikumar452/",
+        value: "zaidalikhan31",
+        url: "https://www.linkedin.com/in/zaidalikhan31/",
       },
       {
         link: true,
         key: "GitHub",
-        value: "SaikumarBlaze",
-        url: "https://www.github.com/SaikumarBlaze",
+        value: "zaidkhan13",
+        url: "https://www.github.com/zaidkhan13",
       },
       {
         link: false,
         key: "Languages",
-        value: "English, Hindi, Telugu, Kannada",
+        value: "English, Hindi, Telugu",
       },
     ],
     quote:
       "Technology is more than just a career for me - it's a passion. I love exploring how new tools and frameworks can solve real-world problems.",
     skillsList: [
-      { title: "C++", value: "80" },
-      { title: "Python", value: "80" },
       { title: "HTML5", value: "95" },
       { title: "CSS3", value: "90" },
       { title: "JavaScript", value: "80" },
@@ -40,6 +38,8 @@ const about = () => {
       { title: "Express Js", value: "85" },
       { title: "Node Js", value: "85" },
       { title: "MongoDB", value: "75" },
+      { title: "C++", value: "80" },
+      { title: "Python", value: "80" },
     ],
     interestList: [
       {

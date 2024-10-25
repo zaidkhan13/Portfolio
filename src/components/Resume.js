@@ -4,26 +4,26 @@ import "../assets/styles/resume.css";
 const Resume = () => {
   const resumeDetails = {
     resumeUrl:
-      "https://drive.google.com/file/d/1oaZbVxw_Cwp37fGEcfv76tiNOxj7YvLu/view?usp=sharing",
+      "https://drive.google.com/file/d/1Iq6MEPLfMz_Ry3vo51u8dMiLpCYveGF7/view?usp=sharing",
     leftSectionsList: [
       {
         title: "Education",
         subSectionsList: [
           {
-            program: "Bachelor of Technology",
-            period: "2020 - 2024",
-            institute: "Indian Institute of Information Technology, Jabalpur",
-            course: "Computer Science and Engineering",
+            program: "Bachelor of Engineering",
+            period: "2021 - 2024",
+            institute: "Deccan College of Engineering and Technology",
+            course: "Information Technology",
             key: "CGPA",
-            score: "6.5 / 10",
+            score: "7.57 / 10",
           },
           {
-            program: "Higher Secondary",
-            period: "2019 - 2020",
-            institute: "Sri Chaitanaya Jr College, Telangana",
-            course: "Maths-Physics-Chemistry",
-            key: "Percentage",
-            score: "92 / 100",
+            program: "Diploma",
+            period: "2020 - 2021",
+            institute: "Mahaveer Institute of Information Technology",
+            course: "Mechanical Engineering",
+            key: "CGPA",
+            score: "6.5 / 10",
           },
           {
             program: "Secondary Education",
@@ -31,7 +31,7 @@ const Resume = () => {
             institute: "Fr. Roch Memorial High School, Telangana",
             course: "Maths-Physics-Chemistry",
             key: "CGPA",
-            score: "9.7 / 10",
+            score: "7.7 / 10",
             last: true,
           },
         ],
@@ -49,17 +49,7 @@ const Resume = () => {
               "Improved team collaboration and deployment efficiency.",
               "Implemented security compliance measures, increasing productivity by 20%.",
             ],
-            certificateUrl: "https://www.github.com/SaikumarBlaze",
-          },
-          {
-            subTitle: "Swayam Plus AWS Cloud Training",
-            period: "August 2024 - October 2024",
-            descList: [
-              "Gained knowledge of AWS Cloud services and architecture.",
-              "Worked with cloud security and pricing models.",
-              "Created cost-effective and scalable cloud infrastructures.",
-            ],
-            certificateUrl: "https://www.github.com/SaikumarBlaze",
+            certificateUrl: "https://www.github.com/zaidkhan13",
             last: true,
           },
         ],
