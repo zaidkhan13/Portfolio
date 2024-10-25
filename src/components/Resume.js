@@ -2,6 +2,71 @@ import React from "react";
 import "../assets/styles/resume.css";
 
 const Resume = () => {
+  const resumeDetails = {
+    resumeUrl:
+      "https://drive.google.com/file/d/1oaZbVxw_Cwp37fGEcfv76tiNOxj7YvLu/view?usp=sharing",
+    leftSectionsList: [
+      {
+        title: "Education",
+        subSectionsList: [
+          {
+            program: "Bachelor of Technology",
+            period: "2020 - 2024",
+            institute: "Indian Institute of Information Technology, Jabalpur",
+            course: "Computer Science and Engineering",
+            key: "CGPA",
+            score: "6.5 / 10",
+          },
+          {
+            program: "Higher Secondary",
+            period: "2019 - 2020",
+            institute: "Sri Chaitanaya Jr College, Telangana",
+            course: "Maths-Physics-Chemistry",
+            key: "Percentage",
+            score: "92 / 100",
+          },
+          {
+            program: "Secondary Education",
+            period: "2017 - 2018",
+            institute: "Fr. Roch Memorial High School, Telangana",
+            course: "Maths-Physics-Chemistry",
+            key: "CGPA",
+            score: "9.7 / 10",
+            last: true,
+          },
+        ],
+      },
+    ],
+    rightSectionsList: [
+      {
+        title: "Achievements",
+        subSectionsList: [
+          {
+            subTitle: "Microsoft DevOps Training",
+            period: "September 2024",
+            descList: [
+              "Learned to configure CI/CD pipelines and manage source control.",
+              "Improved team collaboration and deployment efficiency.",
+              "Implemented security compliance measures, increasing productivity by 20%.",
+            ],
+            certificateUrl: "https://www.github.com/SaikumarBlaze",
+          },
+          {
+            subTitle: "Swayam Plus AWS Cloud Training",
+            period: "August 2024 - October 2024",
+            descList: [
+              "Gained knowledge of AWS Cloud services and architecture.",
+              "Worked with cloud security and pricing models.",
+              "Created cost-effective and scalable cloud infrastructures.",
+            ],
+            certificateUrl: "https://www.github.com/SaikumarBlaze",
+            last: true,
+          },
+        ],
+      },
+    ],
+  };
+
   return (
     <div className="my-outer-container px-4 py-5">
       <div className="my-inner-container text-light">
@@ -17,7 +82,7 @@ const Resume = () => {
               className="resume-link"
               target="_blank"
               rel="noreferrer"
-              href="https://drive.google.com/file/d/1oaZbVxw_Cwp37fGEcfv76tiNOxj7YvLu/view?usp=sharing"
+              href={resumeDetails.resumeUrl}
             >
               Resume Link
             </a>
@@ -25,145 +90,85 @@ const Resume = () => {
         </div>
         <div className="section-body d-flex my-4">
           <div className="resume-left d-flex flex-column">
-            <div className="resume-section-1">
-              <div className="section-1-content">
-                <h3 className="mt-2 mb-4">Education</h3>
-                <div className="box d-flex">
-                  <div className="left-box-1 d-flex flex-column align-items-center">
-                    <span className="circle"></span>
-                    <span className="v-line"></span>
-                  </div>
-                  <div className="right-box-1">
-                    <h5 className="title-green mb-2">Bachelor of Technology</h5>
-                    <span className="badge bg-secondary mb-2">2020 - 2024</span>
-                    <div className="study-place mb-2">
-                      Indian Institute of Information Technology, Jabalpur
-                    </div>
-                    <div className="course mb-2">
-                      Computer Science and Engineering
-                    </div>
-                    <div className="score">
-                      <span className="bold">cgpa :&nbsp; </span> 6.5 / 10
-                    </div>
-                  </div>
+            {resumeDetails.leftSectionsList.map((element, index) => {
+              return (
+                <div key={index} className="resume-section">
+                  <h3 className="mt-2 mb-4">{element.title}</h3>
+                  {element.subSectionsList.map((element, index) => {
+                    return (
+                      <div key={index} className="box d-flex">
+                        <div className="left-box d-flex flex-column align-items-center">
+                          <span className="circle"></span>
+                          <span className="v-line"></span>
+                        </div>
+                        <div className={`right-box ${element.last && "pb-0"}`}>
+                          <h5 className="title-green mb-2">
+                            {element.program}
+                          </h5>
+                          <span className="badge bg-secondary mb-2">
+                            {element.period}
+                          </span>
+                          <div className="study-place mb-2">
+                            {element.institute}
+                          </div>
+                          <div className="course mb-2">{element.course}</div>
+                          <div className="score">
+                            <span className="bold">{element.key} :&nbsp; </span>{" "}
+                            {element.score}
+                          </div>
+                        </div>
+                      </div>
+                    );
+                  })}
                 </div>
-                <div className="box d-flex">
-                  <div className="left-box-1 d-flex flex-column align-items-center">
-                    <span className="circle"></span>
-                    <span className="v-line"></span>
-                  </div>
-                  <div className="right-box-1">
-                    <h5 className="title-green mb-2">Higher Secondary</h5>
-                    <span className="badge bg-secondary mb-2">2019 - 2020</span>
-                    <div className="study-place mb-2">
-                      Sri Chaitanaya Jr College, Telangana
-                    </div>
-                    <div className="course mb-2">Maths-Physics-Chemistry</div>
-                    <div className="score">
-                      <span className="bold">percentage :&nbsp; </span> 92 / 100
-                    </div>
-                  </div>
-                </div>
-                <div className="box d-flex">
-                  <div className="left-box-1 d-flex flex-column align-items-center">
-                    <span className="circle"></span>
-                    <span className="v-line"></span>
-                  </div>
-                  <div className="right-box-1 pb-0">
-                    <h5 className="title-green mb-2">Secondary Education</h5>
-                    <span className="badge bg-secondary mb-2">2017 - 2018</span>
-                    <div className="study-place mb-2">
-                      Fr. Roch Memorial High School, Telangana
-                    </div>
-                    <div className="course mb-2">Maths-Physics-Chemistry</div>
-                    <div className="score">
-                      <span className="bold">cgpa :&nbsp; </span> 9.7 / 10
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+              );
+            })}
           </div>
           <div className="resume-right d-flex flex-column">
-            <div className="resume-section-1">
-              <div className="section-1-content">
-                <h3 className="mt-2 mb-4">Achievements</h3>
-                <div className="box d-flex">
-                  <div className="left-box-1 d-flex flex-column align-items-center">
-                    <span className="circle"></span>
-                    <span className="v-line"></span>
-                  </div>
-                  <div className="right-box-1">
-                    <h5 className="title-green mb-2">
-                      Microsoft DevOps Training
-                    </h5>
-                    <span className="badge bg-secondary mb-3">
-                      September 2024
-                    </span>
-                    <div className="mb-3">
-                      <ul className="list-item-1">
-                        <li className="mb-2">
-                          Learned to configure CI/CD pipelines and manage source
-                          control.
-                        </li>
-                        <li className="mb-2">
-                          Improved team collaboration and deployment efficiency.
-                        </li>
-                        <li className="mb-2">
-                          Implemented security compliance measures, increasing
-                          productivity by 20%.
-                        </li>
-                      </ul>
-                    </div>
-                    <div className="source mb-2">
-                      <a
-                        className="certificate-link"
-                        href="https://www.github.com/SaikumarBlaze"
-                      >
-                        Certificate Link
-                      </a>
-                    </div>
-                  </div>
+            {resumeDetails.rightSectionsList.map((element, index) => {
+              return (
+                <div key={index} className="resume-section">
+                  <h3 className="mt-2 mb-4">{element.title}</h3>
+                  {element.subSectionsList.map((element, index) => {
+                    return (
+                      <div key={index} className="box d-flex">
+                        <div className="left-box d-flex flex-column align-items-center">
+                          <span className="circle"></span>
+                          <span className="v-line"></span>
+                        </div>
+                        <div className={`right-box ${element.last && "pb-0"}`}>
+                          <h5 className="title-green mb-2">
+                            {element.subTitle}
+                          </h5>
+                          <span className="badge bg-secondary mb-3">
+                            {element.period}
+                          </span>
+                          <div className="mb-0">
+                            <ul className="list-item mb-0">
+                              {element.descList.map((element, index) => {
+                                return (
+                                  <li key={index} className="mb-2">
+                                    {element}
+                                  </li>
+                                );
+                              })}
+                            </ul>
+                          </div>
+                          <div className="source d-none">
+                            <a
+                              className="certificate-link"
+                              href={element.certificateUrl}
+                            >
+                              Certificate Link
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    );
+                  })}
                 </div>
-                <div className="box d-flex">
-                  <div className="left-box-1 d-flex flex-column align-items-center">
-                    <span className="circle"></span>
-                    <span className="v-line"></span>
-                  </div>
-                  <div className="right-box-1 pb-0">
-                    <h5 className="title-green mb-2">
-                      Swayam Plus AWS Cloud Training
-                    </h5>
-                    <span className="badge bg-secondary mb-3">
-                      August 2024 - October 2024
-                    </span>
-                    <div className="mb-3">
-                      <ul className="list-item-1">
-                        <li className="mb-2">
-                          Gained knowledge of AWS Cloud services and
-                          architecture.
-                        </li>
-                        <li className="mb-2">
-                          Worked with cloud security and pricing models.
-                        </li>
-                        <li className="mb-2">
-                          Created cost-effective and scalable cloud
-                          infrastructures.
-                        </li>
-                      </ul>
-                    </div>
-                    <div className="source">
-                      <a
-                        className="certificate-link"
-                        href="https://www.github.com/SaikumarBlaze"
-                      >
-                        Certificate Link
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+              );
+            })}
           </div>
         </div>
       </div>

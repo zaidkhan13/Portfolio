@@ -17,7 +17,7 @@
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.box .right-box-1 {
+.box .right-box {
   padding: 0px 20px 30px 20px;
 }
 
@@ -34,18 +34,18 @@
   text-transform: uppercase;
 }
 
-.list-item-1 {
+.list-item {
   padding-left: 18px;
 }
 
-.list-item-1 li {
+.list-item li {
   list-style: disc;
 }
 
 .certificate-link {
   text-decoration: none;
   color: #18d26e;
-  transition: all .25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 
 .certificate-link:hover {
@@ -96,5 +96,15 @@
 
   .title-content {
     margin-bottom: 18px;
+  }
+}
+
+@media (max-width: 426px) {
+  .title-green {
+    font-size: 17px;
+  }
+
+  .right-box {
+    font-size: 14px;
   }
 }
